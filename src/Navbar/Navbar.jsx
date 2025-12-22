@@ -4,6 +4,7 @@ import logo from '../assets/logo.png'
 import Marquee from 'react-fast-marquee';
 import { Link, NavLink } from 'react-router';
 import { IoIosContact } from 'react-icons/io';
+import LastNav from './LastNav';
 const Navbar = () => {
     return (
         <div className='text-center container mx-auto px-40'>
@@ -22,17 +23,8 @@ const Navbar = () => {
                     </Marquee>
                    
              </div>
-              <div className='flex items-center  py-4 justify-between text-gray-500 '>
-                      <div>
-                  
-                      </div>
-                      <div className="gap-4">
-                        <NavLink className="px-2" to="/">Home</NavLink>
-                        <NavLink  className="px-2" to="/about">About</NavLink>
-                        <NavLink  className="px-2" to="/career">Career</NavLink>
-                      </div>
-                      <div className='flex items-center gap-1'><IoIosContact className='text-black text-4xl' /><h1 className='bg-gray-900 text-white cursor-pointer w-20 px-5 py-1 ml-2'>Login</h1></div>
-                    </div>
+             <LastNav></LastNav>
+             
         </div>
     );
 };

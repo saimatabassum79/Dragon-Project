@@ -13,7 +13,7 @@ const SingleNews = ({ d }) => {
   } = d;
 
   return (
-    <div className="bg-white rounded-xl mb-4 mt-6 shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+    <div className="bg-white rounded-xl mb-0  mt-6 shadow-md overflow-hidden hover:shadow-xl transition duration-300">
 
       {/* Thumbnail */}
       <div className="relative">
