@@ -11,6 +11,7 @@ import AuthLayout from './Auth/AuthLayout';
 import Career from './Career/Career';
 import Login from './Login/Login';
 import Register from './Register/Register';
+import AuthProvider from './provider/AuthProvider';
 
 
 const router = createBrowserRouter([
@@ -60,5 +61,7 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <RouterProvider router={router} />
+  <AuthProvider>
+    <RouterProvider router={router} />
+  </AuthProvider>
 );
