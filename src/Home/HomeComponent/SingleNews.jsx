@@ -1,8 +1,10 @@
 import { FaEye, FaStar } from "react-icons/fa";
 import { BsBookmark, BsShare } from "react-icons/bs";
+import { Link } from "react-router";
 
 const SingleNews = ({ d }) => {
   const {
+    _id,
     title,
     details,
     image_url,
@@ -65,6 +67,7 @@ const SingleNews = ({ d }) => {
           {details.length > 120
             ? details.slice(0, 120) + "..."
             : details}
+            <Link to={`/news/${_id}`} className="text-blue-500 ">read more</Link>
         </p>
 
         {/* Footer */}

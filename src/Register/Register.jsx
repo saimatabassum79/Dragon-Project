@@ -1,5 +1,6 @@
 import  { useContext} from 'react';
 import { AuthContext } from '../provider/AuthProvider';
+import LastNav from '../Navbar/LastNav';
 
 
 const Register = () => {
@@ -23,13 +24,12 @@ const Register = () => {
     const errorCode = error.code;
     const errorMessage = error.message;
     console.log(errorCode,errorMessage);
-    
-    // ..
   });
   }
     return (
-        <div>
-            <form onSubmit={handleSubmit} className="min-h-screen flex items-center justify-center bg-gray-100">
+        <div className='bg-gray-100'>
+          <LastNav></LastNav>
+            <form onSubmit={handleSubmit} className="min-h-screen flex items-center justify-center ">
   <div className="w-full max-w-sm bg-white rounded-2xl shadow-xl p-8">
     
     <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">
@@ -70,7 +70,7 @@ const Register = () => {
       <input
       name="password"
         type="password"
-        placeholder="......."
+        placeholder=". . . . . ."
         className="w-full px-4 py-2 text-gray-500 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-400"
       />
     </div>

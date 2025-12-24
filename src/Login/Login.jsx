@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router";
 import { AuthContext } from "../provider/AuthProvider";
+import LastNav from "../Navbar/LastNav";
 
 
 const Login = () => {
@@ -28,6 +29,7 @@ const Login = () => {
   }
     return (
         <div>
+          <LastNav></LastNav>
             <form onSubmit={handleSubmit} className="min-h-screen flex items-center justify-center bg-gray-100">
   <div className="w-full max-w-lg bg-white rounded-2xl shadow-xl p-12">
     

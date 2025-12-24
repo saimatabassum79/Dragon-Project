@@ -12,6 +12,7 @@ import Career from './Career/Career';
 import Login from './Login/Login';
 import Register from './Register/Register';
 import AuthProvider from './provider/AuthProvider';
+import NewsDetails from './Home/HomeComponent/NewsDetails';
 
 
 const router = createBrowserRouter([
@@ -34,7 +35,24 @@ const router = createBrowserRouter([
           }
         ]
       },
+        {
+            path:"/news/:id",
+            element:<NewsDetails></NewsDetails>,
+            loader:({params})=>fetch(`https://openapi.programming-hero.com/api/news/${params.id}`)
+          },
+     
       {
+        path:"/career",
+        element:<Career></Career>
+      },
+      {
+        path:"/about",
+        element:<About></About>
+      },
+    ]
+  },
+ 
+   {
         path:"auth",
         element:<AuthLayout></AuthLayout>,
         children:[
@@ -48,16 +66,6 @@ const router = createBrowserRouter([
           }
         ]
       },
-      {
-        path:"/career",
-        element:<Career></Career>
-      },
-      {
-        path:"/about",
-        element:<About></About>
-      },
-    ]
-  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
