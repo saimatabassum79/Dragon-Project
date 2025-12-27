@@ -4,7 +4,7 @@ import LastNav from '../Navbar/LastNav';
 
 const AuthLayout = () => {
     return (
-        <div className='container mx-auto px-40'>
+        <div className='container mx-auto lg:px-40 px-4'>
             
             <Outlet></Outlet>
         </div>
