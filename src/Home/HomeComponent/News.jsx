@@ -4,7 +4,7 @@ import SingleNews from './SingleNews';
 
 const News = () => {
     const {data} = useLoaderData();
-    console.log(data);
+  
     
     return (
         <div>

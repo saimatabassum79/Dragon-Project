@@ -6,7 +6,7 @@ import { useLoaderData } from 'react-router';
 const NewsDetails = () => {
     const data = useLoaderData();
     const news = data.data[0];
-    console.log(news);
+  
     
     return (
         <div className='container mx-auto px-40 grid grid-cols-12 gap-6'>

@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 const SingleNews = ({ d }) => {
   const {
-    _id,
+   _id,
     title,
     details,
     image_url,

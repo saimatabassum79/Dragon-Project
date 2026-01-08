@@ -47,6 +47,16 @@ const LastNav = () => {
         >
           Career
         </NavLink>
+        <NavLink
+          to="/contact"
+          className={({ isActive }) =>
+            isActive
+              ? "text-black font-bold border-b-2 border-black pb-1"
+              : "text-gray-500 hover:text-black transition"
+          }
+        >
+         Contact
+        </NavLink>
       </div>
 
       {/* User Section */}
